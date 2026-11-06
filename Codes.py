@@ -1,5 +1,18 @@
-### Test for Pushing the files in github 
-### program to sort the given list in ascending order
-givenlist={2,1,3,42,23,4,63,12}
-for list enumerate(givenlist):
-    
+import pygame
+
+pygame.init()
+screen = pygame.display.set_mode((640, 480))
+pygame.display.set_caption("My First Game")
+clock = pygame.time.Clock()
+
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    screen.fill((30, 30, 40))
+    pygame.display.flip()
+    clock.tick(60)
+
+pygame.quit()
